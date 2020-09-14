@@ -1,0 +1,23 @@
+= Database creation for CEC database
+
+The included db script with HCL Connections only creates the database and gives real high database rights to the database user `lcuser`.
+
+I often found environments, where DB2 administrators don't allow that, or reset the access rights on a regular basis.
+
+So these two scripts can create the needed database:
+
+[source]
+----
+db2 -td@ -vf createDb.sql
+----
+
+or if you already have the database (normally CEC creates the database during startup, when the access rights are high enough), you can limit the access rights of `lcuser` to connect to the database and delete, insert, select and update to all tables.
+
+I tested the access and CEC seems to work normally.
+
+[WARNING]
+--
+Use this on your own risk! No warranty.
+
+I forwarded the code to HCL and hope that support will proove it.
+--
