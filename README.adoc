@@ -1,4 +1,4 @@
-= Database creation for CEC database
+= Database creation for CEC (Connections Engagement Center) database
 
 The included db script with HCL Connections only creates the database and gives real high database rights to the database user `lcuser`.
 
