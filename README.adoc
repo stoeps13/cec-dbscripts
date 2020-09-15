@@ -13,6 +13,11 @@ db2 -td@ -vf createDb.sql
 
 or if you already have the database (normally CEC creates the database during startup, when the access rights are high enough), you can limit the access rights of `lcuser` to connect to the database and delete, insert, select and update to all tables.
 
+[source]
+----
+db2 -td@ -vf appGrants.sql
+----
+
 I tested the access and CEC seems to work normally.
 
 [WARNING]
