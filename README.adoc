@@ -19,5 +19,5 @@ I tested the access and CEC seems to work normally.
 --
 Use this on your own risk! No warranty.
 
-I forwarded the code to HCL and hope that support will proove it.
+If you remove the default access rights from the CEC database, it can happen that updates in the future can't change the database structure and will not work as expected!
 --
